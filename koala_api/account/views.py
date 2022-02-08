@@ -7,10 +7,10 @@ from django.contrib.auth import get_user_model
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
 from django.contrib.auth import authenticate
-from django.forms import ValidationError, model_to_dict
+from django.forms import model_to_dict
 from rest_framework.authentication import BasicAuthentication
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
-
+from rest_framework.exceptions import ValidationError
 
 User = get_user_model()
 
