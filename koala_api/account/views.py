@@ -1,6 +1,5 @@
 from rest_framework.response import Response
 from rest_framework import status 
-from django.http import JsonResponse
 from rest_framework.decorators import api_view,authentication_classes,permission_classes
 from .serializers import UserSerializer, LoginSerializer
 from django.contrib.auth import get_user_model
